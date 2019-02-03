@@ -4,13 +4,15 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$(document).ready(function () {
-	$('#movein').waypoint(function () {
-        $('.movein').addClass('animated fadeInLeft');
-    }, {
-        offset: '75%'
-    });
-});
+// $(document).ready(function () {
+
+//     $('.image').waypoint(function () {
+//         $('.image').addClass('fadeInLeft');
+//     }, {
+//         offset: '75%'
+//     });
+
+// });
 
 (function($) {
 
@@ -30,6 +32,14 @@ $(document).ready(function () {
 			$wrapper = $('#page-wrapper'),
 			$banner = $('#banner'),
 			$header = $('#header');
+			
+			$movein = $('.movein');
+
+			$movein.waypoint(function () {
+	    		$('.movein').addClass('animated fadeInLeft');
+	    	},{
+        		offset: '75%'
+    		});
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -102,6 +112,7 @@ $(document).ready(function () {
 				});
 
 			}
+
 
 	});
 

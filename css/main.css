@@ -1740,6 +1740,26 @@ button,
     button.special:active,
     .button.special:active {
       background-color: #b81d23 !important; }
+  input[type="submit"].special-gift,
+  input[type="reset"].special-gift,
+  input[type="button"].special-gift,
+  button.special-gift,
+  .button.special-gift {
+    background-color: #fdc542;
+    box-shadow: none !important;
+    color: #ffffff !important; }
+    input[type="submit"].special-gift:hover,
+    input[type="reset"].special-gift:hover,
+    input[type="button"].special-gift:hover,
+    button.special-gift:hover,
+    .button.special-gift:hover {
+      background-color: #fdcd5b !important; }
+    input[type="submit"].special-gift:active,
+    input[type="reset"].special-gift:active,
+    input[type="button"].special-gift:active,
+    button.special-gift:active,
+    .button.special-gift:active {
+      background-color: #fdbd29 !important; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
@@ -1912,6 +1932,13 @@ button,
   @media screen and (max-width: 736px) {
     .spotlight .content {
       padding: 3em 2em 1em 2em ; } }
+
+/* for waypoint move in */
+.movein {
+  visibility: hidden; }
+
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+  visibility: visible; }
 
 /* Spotlight-reverse */
 .spotlight-reverse {
@@ -2221,6 +2248,8 @@ button,
     @media screen and (max-width: 980px) {
       .wrapper > .inner {
         width: 100%; } }
+    .wrapper > .inner header p {
+      margin: 0 0 1em 0; }
   .wrapper.alt {
     padding: 0; }
   .wrapper.style1 {
@@ -2846,7 +2875,10 @@ body.is-loading #banner:after {
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
-    width: 30%; }
+    width: 30%;
+    margin: 1em 0 0 0; }
+    #cta .inner .actions li {
+      margin: 0 0 1em 0; }
   @media screen and (max-width: 980px) {
     #cta .inner {
       display: block;
